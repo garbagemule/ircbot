@@ -15,6 +15,4 @@ In `admins.js` you can specify the user, host, and nick information of all IRC u
 Usage
 -----
 
-When the bot has been configured, simply run `node main.js`. When the bot has connected, simply send a private message to it from an admin IRC user with the message `!load all` to load all plugins.
-
-Test to see if the bot works by typing `!ping` in the channel.
+When the bot has been configured, simply run `node main.js`. When the bot has connected, test to see if it works by typing `!ping` in one of the channels.

@@ -39,6 +39,9 @@ d.run(function() {
     con.on('!load', pluginman.load);
     con.on('!unload', pluginman.unload);
     con.on('!reload', pluginman.reload);
+
+    // Load all plugins automatically
+    pluginman.loadall(con);
   });
 });
 
