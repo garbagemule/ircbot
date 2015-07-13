@@ -31,7 +31,9 @@ d.on('error', function(error) {
 d.run(function() {
   con.connect();
   con.on('connected', function() {
-    con.join('#garbagemule');
+    options.channels.forEach(function(channel) {
+      con.join(channel);
+    });
 
     // Register plugin manager explicitly
     con.on('!load', pluginman.load);
