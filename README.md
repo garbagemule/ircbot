@@ -6,7 +6,7 @@ MuleBot is an IRC bot written in NodeJS. It supports hot code reloading of its p
 Usage
 -----
 
-Simply clone the repository and set up the config-files in the `cfg` folder.
+Simply clone the repository and set up the config-files in the `cfg` folder. Then run the bot with `node main.js`.
 
 The most important config-file is `options.js`, which contains the host and port of the IRC server to connect to, as well as the nick (and optionally user and name) that the bot should connect as.
 
