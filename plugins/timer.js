@@ -19,13 +19,13 @@ var u = require('../cmdutil');
  */
 var m = {
   timer: function(text, con, msg) {
-    var args = u.args(text);
-    if (args.length === 0) {
-      u.out('Usage: !timer <time string> (<message>)');
-      u.out('e.g. !timer 2m30s Hello, World!');
+    if (text === '') {
+      u.out('Usage: !timer <time string> (<message>)', con, msg);
+      u.out('e.g. !timer 2m30s Hello, World!', con, msg);
       return;
     }
 
+    var args = u.args(text);
     var seconds = m.stringToSeconds(args[0]);
     var message = (args.length === 1) ? 'Time\'s up!' : S(text).between(' ').s;
     
