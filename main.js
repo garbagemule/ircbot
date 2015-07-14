@@ -24,7 +24,7 @@ var con = connection.create(options);
  */
 var d = require('domain').create();
 d.on('error', function(error) {
-  con.error(error);
+  con.error(error.stack);
 });
 
 // We have to run our 'error-prone' code in a domain task
